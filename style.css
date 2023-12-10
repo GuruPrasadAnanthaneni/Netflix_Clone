@@ -1,0 +1,143 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5); /* Inner border */
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+}
+
+.container::before {
+    content: "";
+    background: url(https://applemagazine.com/wp-content/uploads/2022/03/Netflix-adds-long-awaited-app-function.jpg) no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3; /* Corrected typo, changed "o.3" to "0.3" */
+    z-index: -1;
+}
+
+.container .navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .navbar.left {
+    height: 100%;
+    display: flex;
+    float: left;
+}
+
+.container .navbar .left img {
+    width: 170px;
+    height: 50px;
+    margin-left: 170px;
+    margin-top: 30px;
+}
+
+.container .navbar.right {
+    height: 100%;
+    position: absolute;
+    float: right;
+    display: flex;
+    right: 50px;
+}
+
+.container .navbar .right .language {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    padding: 7px 10px;
+    color: white;
+    background: none;
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.container .navbar .right .language option {
+    background-color: gray;
+}
+
+.container .navbar .right button {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 7px 17px;
+    background-color: #e50914;
+    cursor: pointer;
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    right: 100px;
+    width: 75px;
+    height: 30px;
+    margin-right: 180px;
+    margin-top: 20px;
+}
+
+.container .navbar .right button a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .title {
+    padding: 70px 45px;
+    position: relative;
+}
+
+.container .title .content {
+    margin-top: 110px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container .content h4 {
+    font-size: 20px;
+}
+
+.container input {
+    width: 400px;
+    height: 50px;
+    background-color: black;
+    font-size: 18px;
+    padding: 7px 17px;
+    border-radius: 4px;
+    border: 1px solid #333;
+    color: white; /* Added text color */
+}
+
+.container input::placeholder {
+    text-decoration: none;
+    color: white;
+}
+
+.container button {
+    width: 200px;
+    height: 50px;
+    background-color: #e50914;
+    font-size: 18px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.container button a {
+    text-decoration: none;
+    color: white;
+}
